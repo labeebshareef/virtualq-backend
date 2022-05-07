@@ -1,0 +1,35 @@
+{
+  "name": "virtualq",
+  "version": "1.0.0",
+  "description": "backend app for online queue managing system",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start ecosystem.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Labeeb Shareef",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-strongloop": "^2.1.0"
+  },
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.0",
+    "express-validator": "^6.14.0",
+    "fcm-node": "^1.6.1",
+    "helmet": "^5.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.1",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.7.4",
+    "otp-generator": "^4.0.0",
+    "winston": "^3.7.2",
+    "winston-daily-rotate-file": "^4.6.1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "APPOINTMENT": {
+    "STATUS": {
+      "PENDING": 100,
+      "ACCEPTED": 101,
+      "REJECTED": 102
+    }
+  }
+}
