@@ -61,7 +61,7 @@ exports.requestAppointment = async (req, res, next) => {
 exports.getSellers = async (req, res, next) => {
   try {
     const sellers = await appointmentService
-      .getSellersList();
+      .getSellersList(req.body.search);
     responseUtil.successResponse(res, messageUtil.sellerFetched,
       sellers);
   } catch (ex) {

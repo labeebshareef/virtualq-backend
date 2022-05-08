@@ -67,11 +67,16 @@ exports.addAppointmentRequest = (sellerId, appointmentId, userId, date) => {
   return new AppointmentRequest(appointmentRequest).save();
 };
 
-exports.getSellersList = () => {
-  return Seller.find({
+exports.getSellersList = (search) => {
+  console.log(search);
+  const searchQuery = {
     emailVerified: true,
     timeSlots: { $exists: true, $not: { $size: 0 } },
-  });
+  };
+  if (search) {
+    searchQuery.fullName = { $regex: search, $options: 'i' };
+  }
+  return Seller.find(searchQuery);
 };
 
 exports.getAppointmentRequestList = (userId) => {
