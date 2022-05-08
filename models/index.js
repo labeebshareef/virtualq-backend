@@ -2,7 +2,7 @@
 
 const mongoose = require('mongoose');
 const loggerUtil = require('../utilities/logger');
-
+console.log(process.env.DB_URI);
 mongoose.connect(process.env.DB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
