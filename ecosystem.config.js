@@ -11,8 +11,7 @@ module.exports = {
     env: {
       NODE_ENV: 'development',
       PORT: '3000',
-      DB_URI: 'mongodb://virtualQAdmin:adminvirtualQ' +
-      '@localhost:27017/virtualq?authSource=admin',
+      DB_URI: 'mongodb://localhost:27017/virtualq',
       SMTP_HOST: 'smtp-relay.sendinblue.com',
       SMTP_PORT: 587,
       SMTP_USER: 'labeebshareef96@gmail.com',
